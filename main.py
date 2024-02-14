@@ -19,11 +19,6 @@ def read_files():
 
 
 
-def append_to_file(file_path, string_to_append):
-        with open(file_path, 'a') as file:
-            file.write(string_to_append + '\n')
-
-
 def check(addresses):
     json_files = [
         "./db/0.json", "./db/1.json", "./db/2.json", "./db/3.json",
