@@ -78,7 +78,10 @@ def check(addresses):
 def main():
     configuration()
     addresses = read_files()
-    check(addresses)
+    addresses_lower = []
+    for address in addresses:
+        addresses_lower.append(address.lower())
+    check(addresses_lower)
 
 if __name__ == "__main__":
     main()
